@@ -34,9 +34,12 @@ if __name__ == "__main__":
         )
 
     plt.xlabel("Variance")
+    plt.xlim(0, 50)
     plt.ylabel("Expected Cost")
+    plt.ylim(0, 170)
     plt.title("Expected Cost vs Variance for Each Starting Node")
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
+    plt.savefig("expected_costs_vs_variance.png")
     plt.show()
